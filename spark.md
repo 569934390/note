@@ -9,3 +9,6 @@ https://www.cnblogs.com/shishanyuan/archive/2015/08/19/4721326.html
 2.   资源管理器分配Executor资源并启动StandaloneExecutorBackend，Executor运行情况将随着心跳发送到资源管理器上；
 3.   SparkContext构建成DAG图，将DAG图分解成Stage，并把Taskset发送给Task Scheduler。Executor向SparkContext申请Task，Task Scheduler将Task发放给Executor运行同时SparkContext将应用程序代码发放给Executor。
 4.   Task在Executor上运行，运行完毕释放所有资源。
+
+spark:计算跟着数据走，减少数据的迁移
+hadoop:数据跟着计算走
